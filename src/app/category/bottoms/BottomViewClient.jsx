@@ -108,7 +108,7 @@ const BottomsClientView = ({ initialBottoms }) => {
                                     <Button 
                                         className="w-full bg-slate-900 hover:bg-slate-800 dark:bg-slate-100 dark:hover:bg-slate-200 text-white dark:text-slate-950 text-xs font-bold py-2 rounded-md tracking-wider uppercase transition-colors duration-200 cursor-pointer"
                                     >
-                                        View Details
+                                        Add to Cart
                                     </Button>
                                 </Link>
                             </div>
