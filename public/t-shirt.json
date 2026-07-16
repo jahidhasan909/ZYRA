@@ -1,0 +1,94 @@
+[
+
+  {
+    "id": 1,
+    "title": "Classic Crew Neck T-Shirt",
+    "price": 990,
+    "image": "https://i.ibb.co.com/dJgDCpNF/Product-Image-1758526311.jpg",
+    "available": "Available in Stock",
+    "sizes": ["S", "M", "L", "XL"],
+    "info": [
+      "100% premium cotton",
+      "Soft and breathable fabric",
+      "Perfect for everyday wear"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Oversized Graphic T-Shirt",
+    "price": 1290,
+    "image": "https://i.ibb.co.com/4gV3ykjs/Product-Image-1757934890.jpg",
+    "available": "Available in Stock",
+    "sizes": ["M", "L", "XL"],
+    "info": [
+      "Relaxed oversized fit",
+      "High-quality graphic print",
+      "Comfortable all-day wear"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Polo T-Shirt",
+    "price": 1490,
+    "image": "https://i.ibb.co.com/G4f6vy9N/Product-Image-11773486126.jpg",
+    "available": "Available in Stock",
+    "sizes": ["M", "L", "XL", "XXL"],
+    "info": [
+      "Premium pique cotton",
+      "Classic polo collar",
+      "Suitable for casual and smart wear"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Minimal Essential T-Shirt",
+    "price": 1090,
+    "image": "https://i.ibb.co.com/bjqg9Vy2/Product-Image-1758968971.jpg",
+    "available": "Available in Stock",
+    "sizes": ["S", "M", "L"],
+    "info": [
+      "Minimal modern design",
+      "Soft cotton fabric",
+      "Regular comfortable fit"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Striped Cotton T-Shirt",
+    "price": 1190,
+    "image": "https://i.ibb.co.com/TxQ5CFgm/Product-Image-1714122035.jpg",
+    "available": "Available in Stock",
+    "sizes": ["M", "L", "XL"],
+    "info": [
+      "Stylish striped pattern",
+      "Lightweight breathable fabric",
+      "Perfect for summer"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Premium V-Neck T-Shirt",
+    "price": 1390,
+    "image": "https://i.ibb.co.com/cKZ9Df67/Product-Image-1732097823.jpg",
+    "available": "Available in Stock",
+    "sizes": ["M", "L", "XL", "XXL"],
+    "info": [
+      "Elegant V-neck design",
+      "Premium cotton blend",
+      "Soft and durable finish"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Urban Streetwear T-Shirt",
+    "price": 1590,
+    "image": "https://i.ibb.co.com/VYT75Qjg/Product-Image-1720334996.jpg",
+    "available": "Available in Stock",
+    "sizes": ["M", "L", "XL"],
+    "info": [
+      "Trendy streetwear style",
+      "High-quality fabric",
+      "Relaxed fit for everyday comfort"
+    ]
+  }
+]

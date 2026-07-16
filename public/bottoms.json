@@ -1,0 +1,95 @@
+[
+    
+
+  {
+    "id": 1,
+    "title": "High-Waist Straight Jeans",
+    "price": 2890,
+    "image": "https://i.ibb.co.com/XfSyPshY/Product-Image-11779692122.jpg",
+    "available": "Available in Stock",
+    "sizes": ["S", "M", "L", "XL"],
+    "info": [
+      "Premium stretch denim",
+      "High-waist design",
+      "Comfortable everyday fit"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Wide Leg Trousers",
+    "price": 2490,
+    "image": "https://i.ibb.co.com/ymFNFH6n/Product-Image-11714985951.jpg",
+    "available": "Available in Stock",
+    "sizes": ["S", "M", "L"],
+    "info": [
+      "Soft premium fabric",
+      "Relaxed wide-leg fit",
+      "Perfect for office and casual wear"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Slim Fit Chinos",
+    "price": 2290,
+    "image": "https://i.ibb.co.com/rKRpXNfS/Product-Image-1779692545.jpg",
+    "available": "Available in Stock",
+    "sizes": ["M", "L", "XL"],
+    "info": [
+      "Lightweight cotton blend",
+      "Slim modern fit",
+      "Ideal for everyday styling"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Pleated Midi Skirt",
+    "price": 2690,
+    "image": "https://i.ibb.co.com/YmzQCS6/Product-Image-11772698567.jpg",
+    "available": "Available in Stock",
+    "sizes": ["S", "M", "L"],
+    "info": [
+      "Elegant pleated design",
+      "Soft flowy fabric",
+      "Comfortable all-day wear"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Relaxed Fit Joggers",
+    "price": 1990,
+    "image": "https://i.ibb.co.com/LdCL6rwR/Product-Image-11767595571.jpg",
+    "available": "Available in Stock",
+    "sizes": ["S", "M", "L", "XL"],
+    "info": [
+      "Soft fleece fabric",
+      "Elastic waistband",
+      "Perfect for daily comfort"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Cargo Utility Pants",
+    "price": 3190,
+    "image": "https://i.ibb.co.com/qYZB5wMp/Product-Image-11767595768.jpg",
+    "available": "Available in Stock",
+    "sizes": ["M", "L", "XL"],
+    "info": [
+      "Multiple utility pockets",
+      "Durable premium fabric",
+      "Modern streetwear style"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Classic Denim Shorts",
+    "price": 1790,
+    "image": "https://i.ibb.co.com/RGJnCWV2/Product-Image-11782805910.jpg",
+    "available": "Available in Stock",
+    "sizes": ["S", "M", "L"],
+    "info": [
+      "Premium denim material",
+      "Comfortable regular fit",
+      "Perfect for warm weather"
+    ]
+  }
+]

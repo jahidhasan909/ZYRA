@@ -1,0 +1,95 @@
+[
+    
+
+  {
+    "id": 1,
+    "title": "Floral Summer Dress",
+    "price": 2890,
+    "image": "https://i.ibb.co.com/YFWdL9j1/DSC0182-f8e058c0-9189-4329-9050-a7b370e111d5.webp",
+    "available": "Available in Stock",
+    "sizes": ["S", "M", "L"],
+    "info": [
+      "Soft breathable fabric",
+      "Elegant floral print",
+      "Perfect for summer outings"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Elegant Evening Dress",
+    "price": 4590,
+    "image": "https://i.ibb.co.com/rKHXbD7H/Product-Image-11770280165.jpg",
+    "available": "Available in Stock",
+    "sizes": ["M", "L", "XL"],
+    "info": [
+      "Premium satin fabric",
+      "Elegant slim fit",
+      "Ideal for parties and events"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Casual Shirt Dress",
+    "price": 2490,
+    "image": "https://i.ibb.co.com/994gHv6N/Product-Image-11782805832.jpg",
+    "available": "Available in Stock",
+    "sizes": ["S", "M", "L", "XL"],
+    "info": [
+      "Lightweight cotton fabric",
+      "Relaxed comfortable fit",
+      "Perfect for everyday wear"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Printed Maxi Dress",
+    "price": 3390,
+    "image": "https://i.ibb.co.com/Y4KHfM4m/Product-Image-11782804022.jpg",
+    "available": "Available in Stock",
+    "sizes": ["S", "M", "L"],
+    "info": [
+      "Flowy premium fabric",
+      "Beautiful all-over print",
+      "Comfortable long-length design"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Sleeveless Midi Dress",
+    "price": 2990,
+    "image": "https://i.ibb.co.com/qMbFtYjC/Product-Image-11758704662.jpg",
+    "available": "Available in Stock",
+    "sizes": ["M", "L", "XL"],
+    "info": [
+      "Minimal modern style",
+      "Soft stretch fabric",
+      "Perfect for casual occasions"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Pleated Party Dress",
+    "price": 4190,
+    "image": "https://i.ibb.co.com/0Rym4Xf4/DSC1874-989be8fd-7768-4240-90ae-8bdd95737fa2.webp",
+    "available": "Available in Stock",
+    "sizes": ["S", "M", "L"],
+    "info": [
+      "Premium pleated design",
+      "Comfortable inner lining",
+      "Elegant party-ready look"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Classic Wrap Dress",
+    "price": 3590,
+    "image": "https://i.ibb.co.com/5hFGP4pP/DSC1469-58e017a0-df77-4247-b009-c4ddf3486066.webp",
+    "available": "Available in Stock",
+    "sizes": ["S", "M", "L", "XL"],
+    "info": [
+      "Timeless wrap silhouette",
+      "Soft premium fabric",
+      "Flattering and comfortable fit"
+    ]
+  }
+]

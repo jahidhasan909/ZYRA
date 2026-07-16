@@ -1,0 +1,94 @@
+[
+
+  {
+    "id": 1,
+    "title": "Floral Maxi Dress",
+    "price": 2890,
+    "image": "https://i.ibb.co.com/qYRLj20q/DSC09818-9644b608-a007-493c-9b79-06af076a28d9.webp",
+    "available": "Available in Stock",
+    "sizes": ["S", "M", "L"],
+    "info": [
+      "Soft premium fabric",
+      "Elegant floral print",
+      "Perfect for casual outings"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Elegant Midi Dress",
+    "price": 3290,
+    "image": "https://i.ibb.co.com/Jh2HMdT/DSC3900-3ab68803-37ca-45de-81ff-48407bcd4c67.webp",
+    "available": "Available in Stock",
+    "sizes": ["S", "M", "L", "XL"],
+    "info": [
+      "Comfortable regular fit",
+      "Lightweight fabric",
+      "Ideal for everyday wear"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Oversized Blazer",
+    "price": 4490,
+    "image": "https://i.ibb.co.com/fdSmg8g1/DSC0962-6b465464-5e53-49ff-9837-c755732e78a1.webp",
+    "available": "Available in Stock",
+    "sizes": ["M", "L", "XL"],
+    "info": [
+      "Premium tailored finish",
+      "Modern oversized fit",
+      "Perfect for office and events"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "High-Waist Wide Leg Pants",
+    "price": 2590,
+    "image": "https://i.ibb.co.com/7xZvBmWr/DSC0919.webp",
+    "available": "Available in Stock",
+    "sizes": ["S", "M", "L"],
+    "info": [
+      "Soft stretch fabric",
+      "High-waist design",
+      "Comfortable all-day wear"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Classic Denim Jacket",
+    "price": 3890,
+    "image": "https://i.ibb.co.com/RW6W72C/DSC0878-3fd7274b-1c0d-4a63-b8b1-7cfcb70bf8d1.webp",
+    "available": "Available in Stock",
+    "sizes": ["M", "L", "XL"],
+    "info": [
+      "Premium denim fabric",
+      "Classic button closure",
+      "Perfect for layering"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Casual Knit Top",
+    "price": 1790,
+    "image": "https://i.ibb.co.com/Y7dktS5t/DSC00612-97cf7fa6-83a3-4018-9171-fdbac48f295d.webp",
+    "available": "Available in Stock",
+    "sizes": ["S", "M", "L", "XL"],
+    "info": [
+      "Soft knit material",
+      "Relaxed comfortable fit",
+      "Ideal for daily wear"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Sleeveless Co-Ord Set",
+    "price": 3590,
+    "image": " https://i.ibb.co.com/W4qr2vjM/DSC0031-22581bd5-7d8c-4452-823b-f7d1b6be6f82.webp",
+    "available": "Available in Stock",
+    "sizes": ["S", "M", "L"],
+    "info": [
+      "Matching top and bottom",
+      "Premium breathable fabric",
+      "Modern minimalist style"
+    ]
+  }
+]
