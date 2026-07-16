@@ -41,11 +41,11 @@ const NewArrivals = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
         {collections.map((item) => (
           <div
             key={item.id}
-            className="group relative overflow-hidden rounded-md bg-[#f8f6f3] shadow-sm"
+            className="group relative overflow-hidden  bg-[#f8f6f3] shadow-sm"
           >
       
             <div className="h-[520px] flex items-center justify-center overflow-hidden">
