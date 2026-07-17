@@ -1,6 +1,8 @@
+'use client'
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import {motion} from 'framer-motion'
 
 const categories = [
     
@@ -53,7 +55,7 @@ const categorieswomen = [
 
 export default function ProductGrid() {
     return (
-        <section className="py-12 mt-11 px-4 md:px-14  bg-white">
+        <section className="py-12 mb-7 mt-11 px-4 md:px-14  bg-white">
        
             <section>
                 
@@ -61,8 +63,16 @@ export default function ProductGrid() {
                 <h1 className=' uppercase font-bold text-3xl py-2'>Men</h1>
                 <Image width={1000} height={400} alt='' className='w-full h-[700px] object-fill mb-3' src={'https://i.ibb.co.com/TD0M2bWX/643315130-1262203936017984-326880300960894865-n-Photoroom.png'}></Image>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                    {categories.map((category) => (
-                        <Link href={`/category/${category.slug}`} key={category.id}>
+                    {categories.map((category,index) => (
+                        <motion.div
+                        initial={{ opacity: 0, y: 40 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: index * 0.15 }}
+                        viewport={{ once: true }}
+                        whileHover={{ y: -5, scale: 1.03 }}
+                        key={category.id}>
+
+                        <Link href={`/category/${category.slug}`} >
 
                             
                         <div
@@ -103,6 +113,7 @@ export default function ProductGrid() {
                             </div>
                         </div>
                         </Link>
+                        </motion.div>
                     ))}
                 </div>
             </section>
@@ -115,8 +126,16 @@ export default function ProductGrid() {
                 <h1 className=' uppercase font-bold text-3xl py-2'>Women</h1>
                 <Image width={1200} height={400} alt='' className='w-full h-[700px] object-fill mb-3 border border-gray-100' src={'https://i.ibb.co.com/FkGWkpF3/508684623-3582338875233100-2910032981174291059-n-Photoroom.png'}></Image>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                    {categorieswomen.map((category) => (
-                        <Link href={ `/category/${category.slug}`} key={category.id}>
+                    {categorieswomen.map((category,index) => (
+                        <motion.div
+                        initial={{ opacity: 0, y: 40 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: index * 0.15 }}
+                        viewport={{ once: true }}
+                        whileHover={{ y: -5, scale: 1.03 }}
+                        key={category.id}>
+
+                        <Link href={ `/category/${category.slug}`} >
 
                         <div
                             
@@ -156,6 +175,7 @@ export default function ProductGrid() {
                             </div>
                         </div>
                         </Link>
+                        </motion.div>
                     ))}
                 </div>
             </section>

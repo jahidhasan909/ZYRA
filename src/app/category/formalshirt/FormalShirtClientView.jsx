@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 
 import { Dropdown, Button, Separator } from '@heroui/react'; 
+import {motion} from 'framer-motion'
 
 const FormalShirtClientView = ({ initialformalshirt }) => {
     const [shirts, setShirts] = useState(initialformalshirt);
@@ -65,9 +66,17 @@ const FormalShirtClientView = ({ initialformalshirt }) => {
 
             
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                {shirts.map((item) => (
+                {shirts.map((item,index) => (
+                    <motion.div
+                        initial={{ opacity: 0, y: 40 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: index * 0.15 }}
+                        viewport={{ once: true }}
+                        whileHover={{ y: -5, scale: 1.03 }}
+                         key={item.id} >
+
                     <div 
-                        key={item.id} 
+                       
                         className="group flex flex-col justify-between bg-white dark:bg-slate-900 transition-all duration-300"
                     >
                       
@@ -116,6 +125,7 @@ const FormalShirtClientView = ({ initialformalshirt }) => {
                             </div>
                         </div>
                     </div>
+                        </motion.div>
                 ))}
             </div>
         </main>
