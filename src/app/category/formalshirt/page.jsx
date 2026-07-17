@@ -1,9 +1,8 @@
 import React from 'react';
 import FormalShirtClientView from './FormalShirtClientView';
+import initialformalshirt from '@/public/formalshirt.json'; 
 
-const FormalShirtpage = async() => {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/formalshirt.json`)
-    const initialformalshirt = await res.json()
+const FormalShirtpage = () => {
     return (
         <div>
             <FormalShirtClientView initialformalshirt={initialformalshirt}></FormalShirtClientView>

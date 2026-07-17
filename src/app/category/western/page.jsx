@@ -1,9 +1,8 @@
 import React from 'react';
 import WesternClientView from './WesternClient';
+import initialWestern from '@/public/western.json'; 
 
-const Westernpage = async() => {
-    const res=await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/western.json`)
-    const initialWestern=await res.json()
+const Westernpage = () => {
     return (
         <div>
             <WesternClientView initialWestern={initialWestern}></WesternClientView>

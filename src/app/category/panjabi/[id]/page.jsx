@@ -1,17 +1,12 @@
 import React from 'react';
 import PanjabiDetailsClient from './PanjabiDetailsClient';
+import panjabisData from '@/public/panjabi.json';
 
 const PanjabiDetailspage = async ({ params }) => {
     const { id } = await params;
     
     
-    const res = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/panjabi.json`, {
-        cache: 'no-store'
-    });
-    const panjabis = await res.json();
-    
-    
-    const product = panjabis.find((item) => item.id.toString() === id.toString()) || null;
+    const product = panjabisData.find((item) => item.id.toString() === id.toString()) || null;
 
     if (!product) {
         return (

@@ -1,9 +1,8 @@
 import React from 'react';
 import TshirtClientView from './TShirtClientView';
+import initialTshirt from '@/public/t-shirt.json'; 
 
-const TShirtpage = async() => {
-     const res=await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/t-shirt.json`)
-    const initialTshirt=await res.json()
+const TShirtpage = () => {
     return (
         <div>
             <TshirtClientView initialTshirt={initialTshirt}></TshirtClientView>

@@ -1,17 +1,12 @@
 import React from 'react';
 import FootWareDetailsClientView from './FootWareDetailsView';
+import footwareData from '@/public/footware.json'; 
 
-const DressDetailPage = async ({ params }) => {
+const FootwareDetailPage = async ({ params }) => {
     const { id } = await params;
     
-   
-    const res = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/footware.json`, {
-        cache: 'no-store'
-    });
-    const dresses = await res.json();
-    
-    
-    const product = dresses.find((item) => item.id.toString() === id.toString()) || null;
+
+    const product = footwareData.find((item) => item.id.toString() === id.toString()) || null;
 
     if (!product) {
         return (
@@ -23,10 +18,9 @@ const DressDetailPage = async ({ params }) => {
 
     return (
         <div className="dark:bg-slate-950 min-h-screen">
-            
             <FootWareDetailsClientView product={product} />
         </div>
     );
 };
 
-export default DressDetailPage;
+export default FootwareDetailPage;

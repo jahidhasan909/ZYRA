@@ -1,16 +1,11 @@
 import React from 'react';
 import DressDetailsClient from './DressDetailsClient'; 
+import dresses from '@/public/dress.json'; 
 
 const DressDetailPage = async ({ params }) => {
     const { id } = await params;
     
-   
-    const res = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/dress.json`, {
-        cache: 'no-store'
-    });
-    const dresses = await res.json();
-    
-    
+  
     const product = dresses.find((item) => item.id.toString() === id.toString()) || null;
 
     if (!product) {
@@ -23,7 +18,6 @@ const DressDetailPage = async ({ params }) => {
 
     return (
         <div className="dark:bg-slate-950 min-h-screen">
-            
             <DressDetailsClient product={product} />
         </div>
     );

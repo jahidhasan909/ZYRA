@@ -1,17 +1,12 @@
 import React from 'react';
 import PoloDetailsClient from './PoloDetailsClient';
+import poloData from '@/public/polo.json'; 
 
-const PanjabiDetailspage = async ({ params }) => {
+const PoloDetailPage = async ({ params }) => {
     const { id } = await params;
     
     
-    const res = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/polo.json`, {
-        cache: 'no-store'
-    });
-    const polo = await res.json();
-    
-    
-    const product = polo.find((item) => item.id.toString() === id.toString()) || null;
+    const product = poloData.find((item) => item.id.toString() === id.toString()) || null;
 
     if (!product) {
         return (
@@ -23,9 +18,9 @@ const PanjabiDetailspage = async ({ params }) => {
 
     return (
         <div className="dark:bg-slate-950 min-h-screen">
-            <PoloDetailsClient  product={product} />
+            <PoloDetailsClient product={product} />
         </div>
     );
 };
 
-export default PanjabiDetailspage;
+export default PoloDetailPage;

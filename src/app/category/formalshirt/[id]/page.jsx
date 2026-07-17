@@ -1,17 +1,12 @@
 import React from 'react';
 import FormalShirtDetailsClient from './FormalShirtDetailsClient';
+import shirtsData from '@/public/formalshirt.json'; 
 
-const FormalShirtpage = async ({ params }) => {
+const FormalShirtDetailPage = async ({ params }) => {
     const { id } = await params;
     
    
-    const res = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/formalshirt.json`, {
-        cache: 'no-store'
-    });
-    const shirts = await res.json();
-    
-    
-    const product = shirts.find((item) => item.id.toString() === id.toString()) || null;
+    const product = shirtsData.find((item) => item.id.toString() === id.toString()) || null;
 
     if (!product) {
         return (
@@ -28,4 +23,4 @@ const FormalShirtpage = async ({ params }) => {
     );
 };
 
-export default FormalShirtpage;
+export default FormalShirtDetailPage;

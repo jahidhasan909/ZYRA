@@ -1,10 +1,8 @@
 import React from 'react';
 import FootWareClientView from './FootWareClientView';
+import initialfootware from '@/public/footware.json'; 
 
-
-const Dresspage = async () => {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/footware.json`)
-    const initialfootware= await res.json()
+const FootwarePage = () => {
     return (
         <div>
             <FootWareClientView initialfootware={initialfootware}></FootWareClientView>
@@ -12,4 +10,4 @@ const Dresspage = async () => {
     );
 };
 
-export default Dresspage;
+export default FootwarePage;

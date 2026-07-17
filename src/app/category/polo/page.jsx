@@ -1,10 +1,8 @@
 import React from 'react';
 import PoloClientView from './PoloClientView';
+import initialPolo from '@/public/polo.json';
 
-
-const PoloPage = async() => {
-     const res=await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/polo.json`)
-    const initialPolo=await res.json()
+const PoloPage = () => {
     return (
         <div>
             <PoloClientView initialPolo={initialPolo}></PoloClientView>

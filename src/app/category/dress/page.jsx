@@ -1,9 +1,8 @@
 import React from 'react';
 import DressClientView from './DressClientView';
+import initialDress from '@/public/dress.json'; 
 
-const Dresspage = async () => {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/dress.json`)
-    const initialDress = await res.json()
+const Dresspage = () => {
     return (
         <div>
             <DressClientView initialDress={initialDress}></DressClientView>

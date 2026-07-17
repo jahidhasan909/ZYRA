@@ -1,9 +1,8 @@
 import React from 'react';
 import PanjabiClientView from './PubjabiClientView';
+import initialPubjabi from '@/public/panjabi.json'; 
 
-const Panjabipage = async() => {
-     const res=await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/panjabi.json`)
-    const initialPubjabi=await res.json()
+const Panjabipage = () => {
     return (
         <div>
             <PanjabiClientView initialPubjabi={initialPubjabi}></PanjabiClientView>

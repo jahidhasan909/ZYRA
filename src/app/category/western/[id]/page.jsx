@@ -1,16 +1,10 @@
 import React from 'react';
 import WesternDetailsClient from './WesternDetailsClient';
+import westernItems from '@/public/western.json';
 
 const WesternDetailspage = async ({ params }) => {
     const { id } = await params;
     
-    
-    const res = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/western.json`, {
-        cache: 'no-store'
-    });
-    const westernItems = await res.json();
-    
-   
     const product = westernItems.find((item) => item.id.toString() === id.toString()) || null;
 
     if (!product) {
