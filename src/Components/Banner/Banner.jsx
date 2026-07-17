@@ -8,7 +8,7 @@ import AnimatedHeading from './HAnimation';
 const Banner = () => {
     return (
         <div className="relative">
-            <div className="absolute inset-0 z-50 flex items-center">
+            <div className="absolute hidden  inset-0 z-50 md:flex items-center">
                 <div className="ml-20 max-w-lg">
                     <AnimatedHeading></AnimatedHeading>
 

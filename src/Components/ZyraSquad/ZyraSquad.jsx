@@ -26,7 +26,7 @@ const TanjimSquad = () => {
                 />
 
                <Link href={'/products'}>
-                <Button className="mt-4 bg-black text-white">
+                <Button className="mt-4 mb-3 bg-black text-white">
                     Shop Now
                 </Button></Link>
             </div>

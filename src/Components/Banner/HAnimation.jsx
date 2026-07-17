@@ -38,7 +38,7 @@ export default function AnimatedHeading() {
       variants={containerVariants}
       initial="hidden"
       animate="visible"
-      className="mt-6 max-w-2xl text-xs lg:text-6xl  font-bold text-white"
+      className="mt-6 max-w-2xl md:text-2xl lg:text-6xl  font-bold text-white"
     >
       {words.map((word, index) => (
         <motion.span

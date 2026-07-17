@@ -7,6 +7,11 @@ import { kaushan } from "@/app/font";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { CartContext } from "@/Context/ContextProvider";
+import { SearchDrawer } from "../SearchDrawer/SearchDrawer";
+
+
+
+
 
 
 export function Navbar() {
@@ -60,8 +65,8 @@ export function Navbar() {
 
         <Link href={'/'}><h1 className={`${kaushan.className} text-3xl font-bold`}>Zyra</h1></Link>
 
-        <div className="flex gap-2 items-center">
-          <Link className="" href={'/products'}><IoSearchOutline size={20} /></Link>
+        <div className="flex gap-1 items-center">
+          <SearchDrawer></SearchDrawer>
           <Link href={'/cart'} className="relative p-1">
             <BsCart2 size={20} />
             <span className="absolute -top-1 -right-1 bg-slate-950 text-white dark:bg-white dark:text-slate-950 text-[9px] font-bold w-4.5 h-4.5 rounded-full flex items-center justify-center scale-90">
@@ -72,7 +77,7 @@ export function Navbar() {
         </div>
       </header>
       {isMenuOpen && (
-        <div className="border-t border-separator md:hidden">
+        <div className="border-t border-separator sm:hidden mt-9">
           <ul className="flex flex-col gap-1 p-4 uppercase font-semibold">
             {link}
           </ul>
