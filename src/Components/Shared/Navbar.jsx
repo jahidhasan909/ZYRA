@@ -21,7 +21,7 @@ export function Navbar() {
   </>
 
   return (
-    <nav className="sticky  top-0 z-40 w-full border-b border-separator bg-white/77 backdrop-blur-2xl">
+    <nav className="   fixed  top-0 z-[9999] w-full border-b border-separator bg-white/77 backdrop-blur-2xl">
       <header className="flex h-16  items-center justify-between px-13">
         <div className="flex lg:hidden items-center gap-4">
           <button

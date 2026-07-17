@@ -28,7 +28,7 @@ const PanjabiClientView = ({ initialPubjabi }) => {
     };
 
     return (
-        <main className=" px-4 md:px-14 py-10">
+        <main className="mt-19 px-4 md:px-14 py-10">
             
             <div className="flex justify-between items-center mb-8 text-xs md:text-sm text-slate-500 font-medium border-b border-slate-100 dark:border-slate-800 pb-4">
                 <div className=' uppercase'>MAN / Panjabi</div>

@@ -8,3 +8,10 @@
   --swiper-navigation-size: 25px;
 
 }
+
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}

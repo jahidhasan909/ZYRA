@@ -24,7 +24,7 @@ const Cartpage = () => {
     };
 
     return (
-        <main className="max-w-6xl mx-auto px-4 py-16 min-h-[75vh]">
+        <main className="max-w-6xl mt-10 mx-auto px-4 py-16 min-h-[75vh]">
    
             <div className="flex justify-between items-baseline border-b border-slate-100 dark:border-slate-800 pb-6 mb-10">
                 <h1 className="text-xl font-medium tracking-widest uppercase text-slate-900 dark:text-white">
