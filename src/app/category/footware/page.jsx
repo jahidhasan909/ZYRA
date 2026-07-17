@@ -1,6 +1,6 @@
 import React from 'react';
 import FootWareClientView from './FootWareClientView';
-import initialfootware from '@/public/footware.json'; 
+import initialfootware from '../../../public/footware.json';
 
 const FootwarePage = () => {
     return (

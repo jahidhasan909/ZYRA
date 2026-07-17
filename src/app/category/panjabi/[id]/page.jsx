@@ -1,6 +1,6 @@
 import React from 'react';
 import PanjabiDetailsClient from './PanjabiDetailsClient';
-import panjabisData from '@/public/panjabi.json';
+import panjabisData from '../../../public/panjabi.json';
 
 const PanjabiDetailspage = async ({ params }) => {
     const { id } = await params;

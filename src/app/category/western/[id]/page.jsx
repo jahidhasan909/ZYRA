@@ -1,6 +1,6 @@
 import React from 'react';
 import WesternDetailsClient from './WesternDetailsClient';
-import westernItems from '@/public/western.json';
+import westernItems from '../../../public/western.json';
 
 const WesternDetailspage = async ({ params }) => {
     const { id } = await params;

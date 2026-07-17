@@ -1,6 +1,6 @@
 import React from 'react';
 import TshirtClientView from './TShirtClientView';
-import initialTshirt from '@/public/t-shirt.json'; 
+import initialTshirt from '../../../public/t-shirt.json';
 
 const TShirtpage = () => {
     return (
