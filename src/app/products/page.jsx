@@ -62,8 +62,11 @@ export default function ProductGrid() {
                 <Image width={1000} height={400} alt='' className='w-full h-[700px] object-fill mb-3' src={'https://i.ibb.co.com/TD0M2bWX/643315130-1262203936017984-326880300960894865-n-Photoroom.png'}></Image>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                     {categories.map((category) => (
+                        <Link href={`/category/${category.slug}`} key={category.id}>
+
+                            
                         <div
-                            key={category.id}
+                            
                             className={`relative overflow-hidden group aspect-[4/3] bg-gray-100 ${category.isFullWidth
                                     ? 'sm:col-span-2 md:col-span-3 aspect-[21/9] sm:aspect-[21/9] md:aspect-[21/7]'
                                     : ''
@@ -99,6 +102,7 @@ export default function ProductGrid() {
                                 </Link>
                             </div>
                         </div>
+                        </Link>
                     ))}
                 </div>
             </section>
@@ -112,8 +116,10 @@ export default function ProductGrid() {
                 <Image width={1200} height={400} alt='' className='w-full h-[700px] object-fill mb-3 border border-gray-100' src={'https://i.ibb.co.com/FkGWkpF3/508684623-3582338875233100-2910032981174291059-n-Photoroom.png'}></Image>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                     {categorieswomen.map((category) => (
+                        <Link href={ `/category/${category.slug}`} key={category.id}>
+
                         <div
-                            key={category.id}
+                            
                             className={`relative overflow-hidden group aspect-[4/3] bg-gray-100 ${category.isFullWidth
                                     ? 'sm:col-span-2 md:col-span-3 aspect-[21/9] sm:aspect-[21/9] md:aspect-[21/7]'
                                     : ''
@@ -149,6 +155,7 @@ export default function ProductGrid() {
                                 </Link>
                             </div>
                         </div>
+                        </Link>
                     ))}
                 </div>
             </section>

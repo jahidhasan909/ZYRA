@@ -35,15 +35,13 @@ const NewArrivals = () => {
   ];
 
   return (
-    <section className="mt-20">
-      <div className="text-center mb-12">
+    <section className="mt-13">
+      <div className="px-4 py-6">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
           New Arrivals
         </h2>
 
-        <p className="mt-3 text-gray-500 max-w-md mx-auto">
-          Discover our latest collection crafted for everyday elegance.
-        </p>
+       
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2">

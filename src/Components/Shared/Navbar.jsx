@@ -58,7 +58,7 @@ export function Navbar() {
           {link}
         </ul>
 
-        <Link href={'/'}><h1 className={`${kaushan.className} text-2xl font-semibold`}>Zyra</h1></Link>
+        <Link href={'/'}><h1 className={`${kaushan.className} text-3xl font-bold`}>Zyra</h1></Link>
 
         <div className="flex gap-2 items-center">
           <Link className="" href={'/products'}><IoSearchOutline size={20} /></Link>
