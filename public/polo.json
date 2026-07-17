@@ -1,0 +1,75 @@
+[
+
+
+
+
+  {
+    "id": 1,
+    "title": "Classic Fit Polo Shirt",
+    "price": 1690,
+    "image": "https://i.ibb.co.com/VYWq8c6S/rn-al-ss26-mp2167-desc-580-202606200546411079-thumb.jpg",
+    "available": "Available in Stock",
+    "sizes": ["S", "M", "L", "XL"],
+    "info": [
+      "100% premium cotton",
+      "Classic polo collar",
+      "Soft and breathable fabric"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Slim Fit Polo Shirt",
+    "price": 1890,
+    "image": "https://i.ibb.co.com/d0wxrvWf/rn-al-ss26-mp2087-all-over-print-polo-shirt-115-202605110844341065-thumb.jpg",
+    "available": "Available in Stock",
+    "sizes": ["S", "M", "L", "XL"],
+    "info": [
+      "Modern slim fit",
+      "Stretch cotton blend",
+      "Perfect for everyday wear"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Striped Polo Shirt",
+    "price": 1990,
+    "image": "https://i.ibb.co.com/HfYtKmyW/rn-al-ss26-mp2144-color-block-polo-shirt-114-202605110855582807-thumb.jpg",
+    "available": "Available in Stock",
+    "sizes": ["M", "L", "XL"],
+    "info": [
+      "Premium striped design",
+      "Lightweight fabric",
+      "Comfortable all-day fit"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Textured Polo Shirt",
+    "price": 2190,
+    "image": "https://i.ibb.co.com/whzHt1TG/rn-al-ss26-mp2167-desc-109-202606200545402903-thumb.jpg",
+    "available": "Available in Stock",
+    "sizes": ["S", "M", "L", "XL"],
+    "info": [
+      "Premium textured knit",
+      "Button placket collar",
+      "Elegant casual style"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Essential Polo Shirt",
+    "price": 1590,
+    "image": "https://i.ibb.co.com/DH0hbnw8/rn-al-ss26-mp2013-desc-115-202603050549002799-thumb.jpg",
+    "available": "Available in Stock",
+    "sizes": ["S", "M", "L"],
+    "info": [
+      "Soft cotton fabric",
+      "Regular comfortable fit",
+      "Timeless everyday essential"
+    ]
+  }
+]
+
+
+
+

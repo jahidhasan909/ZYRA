@@ -26,6 +26,18 @@ const categories = [
         slug: 'tshirt',
         imageUrl: 'https://i.ibb.co.com/dJgDCpNF/Product-Image-1758526311.jpg',
     },
+    {
+        id: 6,
+        title: 'Polo',
+        slug: 'polo',
+        imageUrl: 'https://i.ibb.co.com/whzHt1TG/rn-al-ss26-mp2167-desc-109-202606200545402903-thumb.jpg',
+    },
+    {
+        id: 6,
+        title: 'FootWear',
+        slug: 'footware',
+        imageUrl: 'https://i.ibb.co.com/R4bjvdQ9/Product-Image-1716204449.jpg',
+    },
     
 ];
 const categorieswomen = [
