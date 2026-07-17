@@ -1,14 +1,57 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Button } from '@heroui/react';
+import { CartContext } from '@/Context/ContextProvider';
+import toast from 'react-hot-toast';
 
 const FormalShirtDetailsClient = ({ product }) => {
+    const { cart, setCart } = useContext(CartContext);
     const [quantity, setQuantity] = useState(1);
     const [selectedSize, setSelectedSize] = useState(product.sizes?.[0] || '');
 
     const handleDecrease = () => quantity > 1 && setQuantity(quantity - 1);
     const handleIncrease = () => setQuantity(quantity + 1);
+
+    const handleAddToCart = () => {
+        if (!selectedSize) {
+            toast.error("Please select a size first!");
+            return;
+        }
+
+        const numericPrice = Number(product.price);
+        
+        
+        const cartItem = {
+            id: product.id,
+            title: product.title,
+            image: product.image,
+            price: numericPrice,
+            size: selectedSize,
+            quantity: quantity,
+            totalAmount: numericPrice * quantity
+        };
+
+      
+        const existingItemIndex = cart.findIndex(
+            (item) => item.id === product.id && item.size === selectedSize
+        );
+
+        if (existingItemIndex > -1) {
+            
+            const updatedCart = [...cart];
+            const newQuantity = updatedCart[existingItemIndex].quantity + quantity;
+            
+            updatedCart[existingItemIndex].quantity = newQuantity;
+            updatedCart[existingItemIndex].totalAmount = updatedCart[existingItemIndex].price * newQuantity;
+            
+            setCart(updatedCart);
+        } else {
+           
+            setCart([...cart, cartItem]);
+        }
+        toast.success('Item added Cart! Allow 2-3 weeks for processing.')
+    };
 
     return (
         <main className="max-w-7xl mx-auto px-4 py-10">
@@ -107,7 +150,7 @@ const FormalShirtDetailsClient = ({ product }) => {
                                     onClick={() => setSelectedSize(size)}
                                     className={`w-10 h-10 text-xs font-semibold rounded-md transition-all cursor-pointer ${
                                         selectedSize === size
-                                            ? 'bg-slate-950 text-white dark:bg-white dark:text-slate-950'
+                                            ? 'bg-slate-950 text-white dark:bg-white dark:text-slate-955'
                                             : 'bg-slate-100 dark:bg-slate-900 text-slate-800 dark:text-slate-200 hover:bg-slate-200'
                                     }`}
                                 >
@@ -136,6 +179,7 @@ const FormalShirtDetailsClient = ({ product }) => {
                         </div>
 
                         <Button 
+                            onClick={handleAddToCart}
                             className="flex-1 bg-slate-950 hover:bg-slate-900 dark:bg-slate-50 dark:hover:bg-slate-200 text-white dark:text-slate-955 text-xs font-bold py-6 rounded-md tracking-widest uppercase transition-colors duration-200 cursor-pointer"
                         >
                             ADD TO CART

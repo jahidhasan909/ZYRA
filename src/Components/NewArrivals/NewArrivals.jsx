@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const NewArrivals = () => {
@@ -8,24 +9,28 @@ const NewArrivals = () => {
       title: "MAN Shirt Formal",
       image:
         "https://i.ibb.co.com/VY45gCJw/Product-Image-1769496706.jpg",
+        href:'/category/formalshirt'
     },
     {
       id: 2,
       title: "MAN Ethnic Wear",
       image:
         "https://i.ibb.co.com/svB2013M/Product-Image-1773494262.jpg",
+        href:'/category/panjabi'
     },
     {
       id: 3,
       title: "women's western wear",
       image:
         "https://i.ibb.co.com/W4qr2vjM/DSC0031-22581bd5-7d8c-4452-823b-f7d1b6be6f82.webp",
+        href:'/category/western'
     },
     {
       id: 4,
       title: "Summer Essentials",
       image:
         "https://i.ibb.co.com/TxQ5CFgm/Product-Image-1714122035.jpg",
+        href:'/category/tshirt'
     },
   ];
 
@@ -43,8 +48,9 @@ const NewArrivals = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
         {collections.map((item) => (
+          <Link  key={item.id} href={item.href}>
           <div
-            key={item.id}
+           
             className="group relative overflow-hidden  bg-[#f8f6f3] shadow-sm"
           >
       
@@ -67,6 +73,7 @@ const NewArrivals = () => {
               </h3>
             </div>
           </div>
+          </Link>
         ))}
       </div>
     </section>

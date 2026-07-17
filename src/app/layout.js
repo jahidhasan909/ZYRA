@@ -3,6 +3,8 @@ import Footer from "@/Components/Shared/Footer";
 import { manrope } from "./font";
 import "./globals.css";
 import { Navbar } from "@/Components/Shared/Navbar";
+import Provider from "@/Context/ContextProvider";
+import { Toaster } from "react-hot-toast";
 
 
 
@@ -19,11 +21,15 @@ export default function RootLayout({ children }) {
       className={`${manrope.className}  h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <Provider>
+
         <Navbar></Navbar>
         <main className="grow">
         {children}
         </main>
         <Footer></Footer>
+        <Toaster />
+        </Provider>
         </body>
     </html>
   );

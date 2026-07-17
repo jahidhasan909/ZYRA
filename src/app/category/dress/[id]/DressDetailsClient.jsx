@@ -1,15 +1,58 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Button } from '@heroui/react';
+import { CartContext } from '@/Context/ContextProvider';
+import toast from 'react-hot-toast';
 
 const DressDetailsClient = ({ product }) => {
+    const { cart, setCart } = useContext(CartContext);
     const [quantity, setQuantity] = useState(1);
     const [selectedSize, setSelectedSize] = useState(product.sizes?.[0] || '');
 
-  
     const handleDecrease = () => quantity > 1 && setQuantity(quantity - 1);
     const handleIncrease = () => setQuantity(quantity + 1);
+
+
+    const handleAddToCart = () => {
+        if (!selectedSize) {
+            toast.error("Please select a size first!");
+            return;
+        }
+
+        const numericPrice = Number(product.price);
+        
+    
+        const cartItem = {
+            id: product.id,
+            title: product.title,
+            image: product.image,
+            price: numericPrice,
+            size: selectedSize,
+            quantity: quantity,
+            totalAmount: numericPrice * quantity
+        };
+
+        
+        const existingItemIndex = cart.findIndex(
+            (item) => item.id === product.id && item.size === selectedSize
+        );
+
+        if (existingItemIndex > -1) {
+           
+            const updatedCart = [...cart];
+            const newQuantity = updatedCart[existingItemIndex].quantity + quantity;
+            
+            updatedCart[existingItemIndex].quantity = newQuantity;
+            updatedCart[existingItemIndex].totalAmount = updatedCart[existingItemIndex].price * newQuantity;
+            
+            setCart(updatedCart);
+        } else {
+          
+            setCart([...cart, cartItem]);
+        }
+        toast.success('Item added Cart! Allow 2-3 weeks for processing.')
+    };
 
     return (
         <main className="max-w-7xl mx-auto px-4 py-10">
@@ -21,6 +64,7 @@ const DressDetailsClient = ({ product }) => {
       
             <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
                 
+                
                 <div className="md:col-span-5 space-y-4">
                     <div className="aspect-[3/4] w-full overflow-hidden bg-slate-100 dark:bg-slate-900 rounded-sm">
                         <img 
@@ -30,7 +74,6 @@ const DressDetailsClient = ({ product }) => {
                         />
                     </div>
                     
-                
                     <div className="grid grid-cols-4 gap-2">
                         <div className="aspect-[3/4] overflow-hidden border border-slate-900 dark:border-slate-100 rounded-sm cursor-pointer">
                             <img src={product.image} alt="" className="h-full w-full object-cover" />
@@ -48,6 +91,7 @@ const DressDetailsClient = ({ product }) => {
                     </div>
                 </div>
 
+              
               
                 <div className="md:col-span-7 space-y-6">
                     <div>
@@ -136,6 +180,7 @@ const DressDetailsClient = ({ product }) => {
                         </div>
 
                         <Button 
+                            onClick={handleAddToCart}
                             className="flex-1 bg-slate-950 hover:bg-slate-900 dark:bg-slate-50 dark:hover:bg-slate-200 text-white dark:text-slate-950 text-xs font-bold py-6 rounded-md tracking-widest uppercase transition-colors duration-200 cursor-pointer"
                         >
                             ADD TO CART

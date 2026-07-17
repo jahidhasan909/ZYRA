@@ -1,21 +1,23 @@
 "use client"
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Button } from "@heroui/react";
 import { IoSearchOutline } from "react-icons/io5";
 import { BsCart2 } from "react-icons/bs";
 import { kaushan } from "@/app/font";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { CartContext } from "@/Context/ContextProvider";
 
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const pathname=usePathname()
+  const pathname = usePathname()
+  const { cart } = useContext(CartContext);
 
-  const link=<>
-  <li><Link className={`${pathname === '/' && ' underline'} hover:bg-gray-200 p-1 rounded-md`} href={'/'}>Home</Link></li>
-  <li><Link className={`${pathname === '/products' && ' underline'} hover:bg-gray-200 p-1 rounded-md`} href={'/products'}>Products</Link></li>
-  <li><Link className={`${pathname === '/cart' && ' underline'} hover:bg-gray-200 p-1 rounded-md`} href={'/cart'}>Cart</Link></li>
+  const link = <>
+    <li><Link className={`${pathname === '/' && ' underline'} hover:bg-gray-200 p-1 rounded-md`} href={'/'}>Home</Link></li>
+    <li><Link className={`${pathname === '/products' && ' underline'} hover:bg-gray-200 p-1 rounded-md`} href={'/products'}>Products</Link></li>
+    <li><Link className={`${pathname === '/cart' && ' underline'} hover:bg-gray-200 p-1 rounded-md`} href={'/cart'}>Cart</Link></li>
   </>
 
   return (
@@ -53,21 +55,26 @@ export function Navbar() {
           </button>
         </div>
         <ul className="hidden items-center gap-2 md:flex uppercase font-semibold">
-        {link}
+          {link}
         </ul>
 
-          <Link href={'/'}><h1 className={`${kaushan.className} text-2xl font-semibold`}>Zyra</h1></Link>
+        <Link href={'/'}><h1 className={`${kaushan.className} text-2xl font-semibold`}>Zyra</h1></Link>
 
-          <div className="flex gap-2 items-center">
-            <Link className="" href={'/products'}><IoSearchOutline size={20}/></Link>
-            <Link href={'/cart'}> <BsCart2 size={20}/></Link>
-           
-          </div>
+        <div className="flex gap-2 items-center">
+          <Link className="" href={'/products'}><IoSearchOutline size={20} /></Link>
+          <Link href={'/cart'} className="relative p-1">
+            <BsCart2 size={20} />
+            <span className="absolute -top-1 -right-1 bg-slate-950 text-white dark:bg-white dark:text-slate-950 text-[9px] font-bold w-4.5 h-4.5 rounded-full flex items-center justify-center scale-90">
+              {cart ? cart.length : 0}
+            </span>
+          </Link>
+
+        </div>
       </header>
       {isMenuOpen && (
         <div className="border-t border-separator md:hidden">
           <ul className="flex flex-col gap-1 p-4 uppercase font-semibold">
-          {link}
+            {link}
           </ul>
         </div>
       )}

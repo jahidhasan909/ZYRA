@@ -1,14 +1,58 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { Button } from '@heroui/react';
+import { CartContext } from '@/Context/ContextProvider';
+import toast from 'react-hot-toast';
 
 const WesternDetailsClient = ({ product }) => {
+    const { cart, setCart } = useContext(CartContext);
     const [quantity, setQuantity] = useState(1);
     const [selectedSize, setSelectedSize] = useState(product.sizes?.[0] || '');
 
     const handleDecrease = () => quantity > 1 && setQuantity(quantity - 1);
     const handleIncrease = () => setQuantity(quantity + 1);
+
+    
+    const handleAddToCart = () => {
+        if (product.sizes && product.sizes.length > 0 && !selectedSize) {
+            toast.error("Please select a size first!");
+            return;
+        }
+
+        const numericPrice = Number(product.price);
+        
+        
+        const cartItem = {
+            id: product.id,
+            title: product.title,
+            image: product.image,
+            price: numericPrice,
+            size: selectedSize || 'N/A',
+            quantity: quantity,
+            totalAmount: numericPrice * quantity
+        };
+
+      
+        const existingItemIndex = cart.findIndex(
+            (item) => item.id === product.id && item.size === (selectedSize || 'N/A')
+        );
+
+        if (existingItemIndex > -1) {
+          
+            const updatedCart = [...cart];
+            const newQuantity = updatedCart[existingItemIndex].quantity + quantity;
+            
+            updatedCart[existingItemIndex].quantity = newQuantity;
+            updatedCart[existingItemIndex].totalAmount = updatedCart[existingItemIndex].price * newQuantity;
+            
+            setCart(updatedCart);
+        } else {
+            
+            setCart([...cart, cartItem]);
+        }
+        toast.success('Item added Cart! Allow 2-3 weeks for processing.')
+    };
 
     return (
         <main className="max-w-7xl mx-auto px-4 py-10">
@@ -21,6 +65,7 @@ const WesternDetailsClient = ({ product }) => {
             <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
                 
                
+                
                 <div className="md:col-span-5 space-y-4">
                     <div className="aspect-[3/4] w-full overflow-hidden bg-slate-100 dark:bg-slate-900 rounded-sm">
                         <img 
@@ -49,6 +94,7 @@ const WesternDetailsClient = ({ product }) => {
                 </div>
 
                
+           
                 <div className="md:col-span-7 space-y-6">
                     <div>
                         <h1 className="text-2xl md:text-3xl font-bold tracking-wider text-slate-950 dark:text-white uppercase">
@@ -97,6 +143,7 @@ const WesternDetailsClient = ({ product }) => {
                     </div>
 
                  
+                 
                     {product.sizes && product.sizes.length > 0 && (
                         <div className="space-y-2">
                             <span className="text-[11px] font-bold tracking-wider text-slate-400 uppercase">SELECT SIZE</span>
@@ -119,6 +166,7 @@ const WesternDetailsClient = ({ product }) => {
                     )}
 
                 
+                
                     <div className="flex flex-col sm:flex-row gap-4 pt-4 border-t border-slate-100 dark:border-slate-800">
                         <div className="flex items-center justify-between border border-slate-200 dark:border-slate-800 rounded-md p-1 min-w-[120px]">
                             <button 
@@ -137,7 +185,8 @@ const WesternDetailsClient = ({ product }) => {
                         </div>
 
                         <Button 
-                            className="flex-1 bg-slate-950 hover:bg-slate-900 dark:bg-slate-50 dark:hover:bg-slate-200 text-white dark:text-slate-950 text-xs font-bold py-6 rounded-md tracking-widest uppercase transition-colors duration-200 cursor-pointer"
+                            onClick={handleAddToCart}
+                            className="flex-1 bg-slate-950 hover:bg-slate-900 dark:bg-slate-50 dark:hover:bg-slate-200 text-white dark:text-slate-955 text-xs font-bold py-6 rounded-md tracking-widest uppercase transition-colors duration-200 cursor-pointer"
                         >
                             ADD TO CART
                         </Button>
