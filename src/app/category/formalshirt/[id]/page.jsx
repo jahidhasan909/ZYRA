@@ -5,7 +5,7 @@ const FormalShirtpage = async ({ params }) => {
     const { id } = await params;
     
    
-    const res = await fetch(`${process.env.NEXT_BASE_URL}/formalshirt.json`, {
+    const res = await fetch(`/formalshirt.json`, {
         cache: 'no-store'
     });
     const shirts = await res.json();

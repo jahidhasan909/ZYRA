@@ -3,7 +3,7 @@ import PoloClientView from './PoloClientView';
 
 
 const PoloPage = async() => {
-     const res=await fetch(`${process.env.NEXT_BASE_URL}/polo.json`)
+     const res=await fetch(`/polo.json`)
     const initialPolo=await res.json()
     return (
         <div>

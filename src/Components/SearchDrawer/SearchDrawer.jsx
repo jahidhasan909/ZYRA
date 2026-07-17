@@ -16,11 +16,11 @@ export function SearchDrawer() {
   const router = useRouter();
 
   useEffect(() => {
-    fetch(`${process.env.NEXT_BASE_URL}/bottoms.json`).then((res) => res.json()).then(setBottoms);
-    fetch(`${process.env.NEXT_BASE_URL}/formalshirt.json`).then((res) => res.json()).then(setFormalshirt);
-    fetch(`${process.env.NEXT_BASE_URL}/dress.json`).then((res) => res.json()).then(setDress);
-    fetch(`${process.env.NEXT_BASE_URL}/westrent.json`).then((res) => res.json()).then(setWestrent);
-    fetch(`${process.env.NEXT_BASE_URL}/panjabi.json`).then((res) => res.json()).then(setPanjabi);
+    fetch(`/bottoms.json`).then((res) => res.json()).then(setBottoms);
+    fetch(`/formalshirt.json`).then((res) => res.json()).then(setFormalshirt);
+    fetch(`/dress.json`).then((res) => res.json()).then(setDress);
+    fetch(`/westrent.json`).then((res) => res.json()).then(setWestrent);
+    fetch(`/panjabi.json`).then((res) => res.json()).then(setPanjabi);
   }, []);
 
   const allItems = [...bottoms, ...formalshirt, ...dress, ...westrent, ...panjabi];
