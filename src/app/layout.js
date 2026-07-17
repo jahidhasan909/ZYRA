@@ -6,12 +6,13 @@ import { Navbar } from "@/Components/Shared/Navbar";
 import Provider from "@/Context/ContextProvider";
 import { Toaster } from "react-hot-toast";
 import LenisProvider from "@/Components/LenisProvider/LenisProvider";
+import ManuNav from "@/Components/Shared/ManuNav";
 
 
 
 export const metadata = {
   
-  title: "ZYRA | Home",
+  title: "ZYRA",
   description: "",
 };
 
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
         <Provider>
 
         <Navbar></Navbar>
+        <ManuNav></ManuNav>
         <LenisProvider>
 
         <main className="grow">
