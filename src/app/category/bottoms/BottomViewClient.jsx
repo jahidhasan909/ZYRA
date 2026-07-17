@@ -104,7 +104,7 @@ const BottomsClientView = ({ initialBottoms }) => {
 
                         
                             <div className="pt-2">
-                                <Link href={`/bottoms/${item.id}`} className="w-full block">
+                                <Link href={`/category/bottoms/${item.id}`} className="w-full block">
                                     <Button 
                                         className="w-full bg-slate-900 hover:bg-slate-800 dark:bg-slate-100 dark:hover:bg-slate-200 text-white dark:text-slate-950 text-xs font-bold py-2 rounded-md tracking-wider uppercase transition-colors duration-200 cursor-pointer"
                                     >

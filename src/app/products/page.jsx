@@ -21,7 +21,7 @@ const categories = [
     {
         id: 6,
         title: 'T-Shirt',
-        slug: 't-shirt',
+        slug: 'tshirt',
         imageUrl: 'https://i.ibb.co.com/dJgDCpNF/Product-Image-1758526311.jpg',
     },
     

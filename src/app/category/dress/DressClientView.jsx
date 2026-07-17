@@ -32,7 +32,7 @@ const DressClientView = ({ initialDress }) => {
             
            
             <div className="flex justify-between items-center mb-8 text-xs md:text-sm text-slate-500 font-medium border-b border-slate-100 dark:border-slate-800 pb-4">
-               <div className=' uppercase'>Women / Bottoms </div>
+               <div className=' uppercase'>Women / Dress </div>
                 
                
                 <Dropdown>
@@ -99,7 +99,7 @@ const DressClientView = ({ initialDress }) => {
 
                            
                             <div className="pt-2">
-                                <Link href={`/dress/${item.id}`} className="w-full block">
+                                <Link href={`/category/dress/${item.id}`} className="w-full block">
                                     <Button 
                                         className="w-full bg-slate-900 hover:bg-slate-800 dark:bg-slate-100 dark:hover:bg-slate-200 text-white dark:text-slate-950 text-xs font-bold py-2 rounded-md tracking-wider uppercase transition-colors duration-200 cursor-pointer"
                                     >
