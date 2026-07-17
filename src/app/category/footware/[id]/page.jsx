@@ -5,7 +5,7 @@ const DressDetailPage = async ({ params }) => {
     const { id } = await params;
     
    
-    const res = await fetch(`/footware.json`, {
+    const res = await fetch(`${process.env.NEXT_BASE_URL}/footware.json`, {
         cache: 'no-store'
     });
     const dresses = await res.json();

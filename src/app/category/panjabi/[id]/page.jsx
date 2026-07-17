@@ -5,7 +5,7 @@ const PanjabiDetailspage = async ({ params }) => {
     const { id } = await params;
     
     
-    const res = await fetch(`/panjabi.json`, {
+    const res = await fetch(`${process.env.NEXT_BASE_URL}/panjabi.json`, {
         cache: 'no-store'
     });
     const panjabis = await res.json();

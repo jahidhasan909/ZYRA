@@ -3,7 +3,7 @@ import FootWareClientView from './FootWareClientView';
 
 
 const Dresspage = async () => {
-    const res = await fetch(`/footware.json`)
+    const res = await fetch(`${process.env.NEXT_BASE_URL}/footware.json`)
     const initialfootware= await res.json()
     return (
         <div>

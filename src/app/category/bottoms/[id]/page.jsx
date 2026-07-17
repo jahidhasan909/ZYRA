@@ -6,7 +6,7 @@ const BottomsDetailspage = async ({ params }) => {
     const { id } = await params;
     
     
-    const res = await fetch(`/bottoms.json`, {
+    const res = await fetch(`${process.env.NEXT_BASE_URL}/bottoms.json`, {
         cache: 'no-store'
     });
     const bottoms = await res.json();
