@@ -1,6 +1,6 @@
 import React from 'react';
 import FootWareDetailsClientView from './FootWareDetailsView';
-import footwareData from '../../../public/footware.json';
+import footwareData from '../../../../../public/footware.json';
 
 const FootwareDetailPage = async ({ params }) => {
     const { id } = await params;

@@ -1,6 +1,6 @@
 import React from 'react';
 import FormalShirtClientView from './FormalShirtClientView';
-import initialformalshirt from '../../../public/formalshirt.json';
+import initialformalshirt from '../../../../public/formalshirt.json';
 
 const FormalShirtpage = () => {
     return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import PoloDetailsClient from './PoloDetailsClient';
-import poloData from '../../../public/polo.json';
+import poloData from '../../../../../public/polo.json';
 
 const PoloDetailPage = async ({ params }) => {
     const { id } = await params;

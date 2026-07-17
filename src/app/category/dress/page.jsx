@@ -1,6 +1,7 @@
 import React from 'react';
 import DressClientView from './DressClientView';
-import initialDress from '@/public/dress.json'; 
+import initialDress from '../../../../public/dress.json'; 
+
 
 const Dresspage = () => {
     return (

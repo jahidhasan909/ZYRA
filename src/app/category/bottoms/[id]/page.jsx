@@ -1,7 +1,7 @@
 import React from 'react';
 import BottomsDetailsClient from './BottomsDetailsClient';
 
-import bottomsData from '@/public/bottoms.json'; 
+import bottomsData from '../../../../../public/bottoms.json'; 
 
 const BottomsDetailspage = async ({ params }) => {
     const { id } = await params;

@@ -1,6 +1,6 @@
 import React from 'react';
 import FormalShirtDetailsClient from './FormalShirtDetailsClient';
-import shirtsData from '../../../public/formalshirt.json';
+import shirtsData from '../../../../../public/formalshirt.json'
 
 const FormalShirtDetailPage = async ({ params }) => {
     const { id } = await params;
