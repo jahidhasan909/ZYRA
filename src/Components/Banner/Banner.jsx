@@ -2,20 +2,17 @@ import React from 'react';
 import ImageSlider from './SwiperJs';
 import { Button } from '@heroui/react';
 import Link from 'next/link';
+import AnimatedParagraph from './PAniamtion';
+import AnimatedHeading from './HAnimation';
 
 const Banner = () => {
     return (
         <div className="relative">
             <div className="absolute inset-0 z-50 flex items-center">
                 <div className="ml-20 max-w-lg">
-                    <h1 className="text-6xl font-bold text-white">
-                        Discover Your Signature Style
-                    </h1>
+                    <AnimatedHeading></AnimatedHeading>
 
-                    <p className="mt-4 text-gray-200">
-                        Timeless fashion, crafted for every moment.
-                    </p>
-
+                   <AnimatedParagraph></AnimatedParagraph>
                     <Link href={'/products'}>
                     <Button className="mt-6 bg-white text-black">
                         View Collection
