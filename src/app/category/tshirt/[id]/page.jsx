@@ -1,6 +1,6 @@
 import React from 'react';
 import TshirtDetailsClient from './TshirtDetailsClient';
-import tshirtsData from '../../../../../public/t-shirt.json';
+import tshirtsData from '../../../../data/t-shirt.json';
 
 const TshirDetailsPage = async ({ params }) => {
     const { id } = await params;

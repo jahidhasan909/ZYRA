@@ -1,0 +1,95 @@
+[
+
+
+  {
+    "id": 1,
+    "title": "Formal Shirt",
+    "price": 2490,
+    "image": "https://i.ibb.co.com/8QHnFvt/Product-Image-1773153715.jpg",
+    "available": "Available in Stock",
+    "sizes": ["M", "L", "XL"],
+    "info": [
+      "Premium cotton fabric",
+      "Regular fit",
+      "Wrinkle-resistant finish"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Formal Shirt",
+    "price": 2690,
+    "image": "https://i.ibb.co.com/VY45gCJw/Product-Image-1769496706.jpg",
+    "available": "Available in Stock",
+    "sizes": ["M", "L", "XL", "XXL"],
+    "info": [
+      "Breathable fabric",
+      "Classic collar",
+      "Ideal for office wear"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Formal Shirt",
+    "price": 2290,
+    "image": "https://i.ibb.co.com/20hg83XT/Product-Image-11751881782.jpg",
+    "available": "Available in Stock",
+    "sizes": ["S", "M", "L"],
+    "info": [
+      "Slim fit design",
+      "Soft cotton blend",
+      "Long sleeve"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Formal Shirt",
+    "price": 2890,
+    "image": "https://i.ibb.co.com/5Wc1q4hk/Product-Image-11751882325.jpg",
+    "available": "Available in Stock",
+    "sizes": ["M", "L", "XL"],
+    "info": [
+      "Premium stitching",
+      "Button-down collar",
+      "Comfortable fit"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Formal Shirt",
+    "price": 2590,
+    "image": "https://i.ibb.co.com/pvxSqVX6/Product-Image-11756103026.jpg",
+    "available": "Available in Stock",
+    "sizes": ["M", "L", "XL"],
+    "info": [
+      "Lightweight fabric",
+      "Easy to iron",
+      "Modern fit"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Formal Shirt",
+    "price": 2790,
+    "image": "https://i.ibb.co.com/1G1WsSGF/Product-Image-11773153989.jpg",
+    "available": "Available in Stock",
+    "sizes": ["L", "XL", "XXL"],
+    "info": [
+      "Premium finish",
+      "Breathable material",
+      "All-season wear"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Formal Shirt",
+    "price": 2990,
+    "image": "https://i.ibb.co.com/S4FX15kF/Product-Image-11773152776.jpg",
+    "available": "Available in Stock",
+    "sizes": ["M", "L", "XL"],
+    "info": [
+      "Luxury cotton",
+      "Regular fit",
+      "Perfect for business meetings"
+    ]
+  }
+]

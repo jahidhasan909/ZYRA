@@ -1,6 +1,6 @@
 import React from 'react';
 import PanjabiClientView from './PubjabiClientView';
-import initialPubjabi from '../../../../public/panjabi.json';
+import initialPubjabi from '../../../data/panjabi.json';
 
 const Panjabipage = () => {
     return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import DressDetailsClient from './DressDetailsClient'; 
-import dresses from '../../../../../public/dress.json'
+import dresses from '../../../../data/dress.json'
 
 const DressDetailPage = async ({ params }) => {
     const { id } = await params;

@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "title": "Classic White Sneakers",
+    "price": 3590,
+    "image": "https://i.ibb.co.com/9kDx7mZz/Product-Image-11766903726.jpg",
+    "available": "Available in Stock",
+    "sizes": ["39", "40", "41", "42", "43"],
+    "info": [
+      "Premium synthetic leather",
+      "Soft cushioned insole",
+      "Perfect for everyday wear"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Sport Running Shoes",
+    "price": 4290,
+    "image": "https://i.ibb.co.com/5hvnCf2T/Product-Image-11726734067.jpg",
+    "available": "Available in Stock",
+    "sizes": ["40", "41", "42", "43", "44"],
+    "info": [
+      "Breathable mesh upper",
+      "Lightweight EVA sole",
+      "Ideal for running and training"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Leather Loafers",
+    "price": 3890,
+    "image": "https://i.ibb.co.com/BHkLggNL/Product-Image-11726733817.jpg",
+    "available": "Available in Stock",
+    "sizes": ["39", "40", "41", "42"],
+    "info": [
+      "Premium genuine leather",
+      "Slip-on comfortable design",
+      "Suitable for formal occasions"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Men's Classic Polo Shirt",
+    "price": 1690,
+    "image": "https://i.ibb.co.com/7x71sSW7/Product-Image-11717137833.jpg",
+    "available": "Available in Stock",
+    "sizes": ["S", "M", "L", "XL"],
+    "info": [
+      "100% premium cotton",
+      "Classic collar with button placket",
+      "Comfortable regular fit"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Slim Fit Polo T-Shirt",
+    "price": 1890,
+    "image": "https://i.ibb.co.com/R4bjvdQ9/Product-Image-1716204449.jpg",
+    "available": "Available in Stock",
+    "sizes": ["M", "L", "XL"],
+    "info": [
+      "Soft breathable fabric",
+      "Modern slim fit",
+      "Perfect for casual styling"
+    ]
+  }
+]

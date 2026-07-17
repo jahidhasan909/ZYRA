@@ -1,7 +1,7 @@
 import React from 'react';
 import BottomsClientView from './BottomViewClient';
 
-import initialBottoms from '../../../../public/bottoms.json'
+import initialBottoms from '../../../data/bottoms.json'
 
 const Bottomspage = () => {
     return (

@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "title": "Classic Cotton Panjabi",
+    "price": 2890,
+    "image": "https://i.ibb.co.com/PGYXKsCt/Product-Image-1773730635.jpg",
+    "available": "Available in Stock",
+    "sizes": ["M", "L", "XL"],
+    "info": [
+      "Premium cotton fabric",
+      "Comfortable regular fit",
+      "Perfect for everyday wear"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Premium Silk Panjabi",
+    "price": 3990,
+    "image": "https://i.ibb.co.com/svB2013M/Product-Image-1773494262.jpg",
+    "available": "Available in Stock",
+    "sizes": ["M", "L", "XL", "XXL"],
+    "info": [
+      "Luxury silk blend",
+      "Elegant embroidered design",
+      "Ideal for festive occasions"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Traditional Embroidered Panjabi",
+    "price": 3490,
+    "image": "https://i.ibb.co.com/9m8W6XPp/Product-Image-11779437014.jpg",
+    "available": "Available in Stock",
+    "sizes": ["S", "M", "L"],
+    "info": [
+      "Traditional embroidery",
+      "Soft breathable fabric",
+      "Comfortable all-day wear"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Linen Panjabi",
+    "price": 3190,
+    "image": "https://i.ibb.co.com/hFprBn8n/Product-Image-1741172015.jpg",
+    "available": "Available in Stock",
+    "sizes": ["M", "L", "XL"],
+    "info": [
+      "Lightweight linen fabric",
+      "Minimal modern design",
+      "Perfect for summer"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Festive Royal Panjabi",
+    "price": 4290,
+    "image": "https://i.ibb.co.com/QFK9d9W1/Product-Image-1741956455.jpg",
+    "available": "Available in Stock",
+    "sizes": ["M", "L", "XL"],
+    "info": [
+      "Premium handcrafted finish",
+      "Elegant festive look",
+      "Soft inner lining"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Printed Cotton Panjabi",
+    "price": 2690,
+    "image": "https://i.ibb.co.com/TxgJ337s/Product-Image-1773487268.jpg",
+    "available": "Available in Stock",
+    "sizes": ["L", "XL", "XXL"],
+    "info": [
+      "Modern printed pattern",
+      "Breathable cotton fabric",
+      "Relaxed comfortable fit"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Heritage Premium Panjabi",
+    "price": 4590,
+    "image": "https://i.ibb.co.com/35v59Kv9/Product-Image-11779353112.jpg",
+    "available": "Available in Stock",
+    "sizes": ["M", "L", "XL"],
+    "info": [
+      "Premium craftsmanship",
+      "Traditional elegant design",
+      "Perfect for weddings and Eid"
+    ]
+  }
+]
