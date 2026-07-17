@@ -2,7 +2,7 @@ import React from 'react';
 import WesternClientView from './WesternClient';
 
 const Westernpage = async() => {
-    const res=await fetch(`${process.env.NEXT_BASE_URL}/western.json`)
+    const res=await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/western.json`)
     const initialWestern=await res.json()
     return (
         <div>

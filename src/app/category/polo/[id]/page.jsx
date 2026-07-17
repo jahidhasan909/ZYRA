@@ -5,7 +5,7 @@ const PanjabiDetailspage = async ({ params }) => {
     const { id } = await params;
     
     
-    const res = await fetch(`${process.env.NEXT_BASE_URL}/polo.json`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/polo.json`, {
         cache: 'no-store'
     });
     const polo = await res.json();
