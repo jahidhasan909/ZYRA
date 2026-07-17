@@ -1,15 +1,12 @@
 import React from 'react';
 import BottomsClientView from './BottomViewClient';
 
-const Bottomspage = async() => {
-    const res=await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/bottoms.json`)
-    const initialBottoms=await res.json()
-    
-    
+import initialBottoms from '@/public/bottoms.json'; 
 
+const Bottomspage = () => {
     return (
         <div>
-            <BottomsClientView initialBottoms={initialBottoms}></BottomsClientView>
+            <BottomsClientView initialBottoms={initialBottoms} />
         </div>
     );
 };

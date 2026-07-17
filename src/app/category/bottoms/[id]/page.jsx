@@ -1,18 +1,13 @@
 import React from 'react';
 import BottomsDetailsClient from './BottomsDetailsClient';
 
+import bottomsData from '@/public/bottoms.json'; 
 
 const BottomsDetailspage = async ({ params }) => {
     const { id } = await params;
     
     
-    const res = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/bottoms.json`, {
-        cache: 'no-store'
-    });
-    const bottoms = await res.json();
-    
-   
-    const product = bottoms.find((item) => item.id.toString() === id.toString());
+    const product = bottomsData.find((item) => item.id.toString() === id.toString());
 
     if (!product) {
         return (
@@ -24,7 +19,6 @@ const BottomsDetailspage = async ({ params }) => {
 
     return (
         <div className="dark:bg-slate-950 min-h-screen">
-          
             <BottomsDetailsClient product={product} />
         </div>
     );
